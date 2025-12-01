@@ -1,0 +1,13 @@
+{
+  "hero" : {
+    "name" : "Issa",
+    "hp" : 75,
+    "mp" : 18,
+    "weapon" : {
+      "name" : "弓",
+      "power" : 7,
+      "element" : null
+    },
+    "items" : null
+  }
+}

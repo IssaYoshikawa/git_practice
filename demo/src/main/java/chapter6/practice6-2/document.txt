@@ -1,0 +1,8 @@
+コードのポイント
+GZIP圧縮: FileOutputStreamを直接使わず、GZIPOutputStreamでラップ（包む）ことで、書き込まれるデータが自動的にGZIP形式で圧縮されます。
+
+バッファリング: FileInputStreamをBufferedInputStreamでラップすることで、ファイル読み込みが効率化されます。
+
+例外処理 (try-with-resources): try(...) の丸括弧の中でストリームを初期化することで、try-with-resources文を利用できます。これはJava 7以降の推奨される方法で、tryブロックが終了すると自動的にストリームのclose()メソッドが呼び出されるため、finallyブロックでclose()処理を書く必要がなく、コードが安全で簡潔になります。
+
+効率的なコピー: 1バイトずつ読み書きする（read()/write(i)）のは非常に非効率です。byte[] buffer（バイト配列）を用意し、read(buffer)でまとめて読み込み、write(buffer, 0, len)でまとめて書き出すのが標準的な方法です。

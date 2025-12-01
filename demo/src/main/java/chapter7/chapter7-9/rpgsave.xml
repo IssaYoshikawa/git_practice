@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero>
+    <name>勇者タロウ</name>
+    <weapon>
+        <name>光の剣</name>
+        <power>120</power>
+    </weapon>
+    <weapon>
+        <name>炎の弓</name>
+        <power>95</power>
+    </weapon>
+    <weapon>
+        <name>雷の槍</name>
+        <power>150</power>
+    </weapon>
+</hero>

@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "chapter5-2",
+        "chapter5-3"
+    ],
+    "java.project.referencedLibraries": [
+        "commons-lang3-3.19.0.jar"
+    ]
+}
